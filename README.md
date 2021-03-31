@@ -23,7 +23,8 @@ camera: megapixel quality of the camera (numerical, empty if no camera)
 memory: the internal memory in MB (numerical)
 screen: the screen type (categorical – Touch/LCD)
 wifi: the top wifi standard supported (categorical – none/b/a/g/n)
-Task 1
+
+#Task 1
 1.	Load the data into a Pandas Dataframe.
 2.	Which of the categorical features are nominal and which are ordinal?
 3.	Add a column that holds the total screen resolution for each device. Name it resolution.
@@ -32,18 +33,21 @@ Task 1
 6.	Change the memory column to hold the memory in GB instead of MB.
 7.	Include the output of the `describe()` function of the dataframe.
 8.	Include a histogram of the prices.
-Task 2
+	
+#Task 2
 1.	Plot a correlation heatmap of the data set and include it. 
 2.	Which features would you say are correlated with the device price?
 3.	Are there features not shown in the correlation matrix that are correlated with the price? If so, what are they?
 4.	For each feature correlated with the price, plot its relationship with price.
 5.	Select 3 features that are correlated with price and create a pivot table showing average price with relation to cross sections of those 3 features (remember to divide numerical features into cuts, for example quartile cuts).
-Task 3
+
+#Task 3
 1.	For each ordinal feature <O>, add a column to the dataframe which holds the ordered values representing each original value of F. This new column will be named <O>_ord. (without the triangle brackets)
 2.	For each nominal feature <N>, add a binary column OR one-hot encoding (whichever is relevant for that feature) to the dataframe representing the original values. Name binary columns <N>_bin, and prefix one-hot encodings with <N>. (without the triangle brackets)
 3.	Plot a correlation heatmap of the modified data set and include it. 
 4.	Save the entire dataframe to a csv file named “mobile_prices_converted.csv” and include it in the submission. Make sure you don’t add a redundant index column.
-Task 4
+
+#Task 4
 1.	Choose 4 features and use a 2-d plot to show the relationships between each pair. This should be done in the form of a 4x4 plot matrix as shown in class.
 2.	We have shown in class how to plot 4 dimensions of data in a 2-dimensional plot. Use this method to plot the relationship between px_width, px_height, price and core. Px_width and px_height should be the X and Y coordinates respectively. 
 3.	There is an additional file named “mobile_prices_2.csv” distributed alongside the exercise. This file contains a mapping of id to price. This price is a transformation of the price in the original data set. The transformation has been made based on a single feature from the data set. Which feature was used and how do you know? Include any relevant plots and tables.
